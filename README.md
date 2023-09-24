@@ -9,3 +9,9 @@ Aplikasi menerapkan kriteria - kriteria yang diminta, antara lain :
 - Jika timer habis, soal akan ditutup & menampilkan hasil pengerjaan (jumlah benar, jumlah salah & jumlah jawab).
 - Ketika browser ditutup, ada mekanisme resume kuis. Bisa menggunakan localstoragebrowser untuk menyimpan data
 
+## How to Run
+
+```
+npm install
+npm run dev
+```
