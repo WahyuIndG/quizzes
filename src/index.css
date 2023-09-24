@@ -1,0 +1,300 @@
+html,
+body,
+div,
+span,
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+nav,
+article,
+aside,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #252c4a;
+  font-family: "Rubik", sans-serif;
+  color: rgb(222, 227, 229);
+}
+
+.login-page,
+.quiz-page {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* LOGIN */
+
+.login-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+}
+
+.login-form p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: rgb(203, 207, 212);
+}
+
+.login-form input {
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 3px solid #214566;
+  border-radius: 18px;
+  color: inherit;
+  font-family: "Rubik";
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.login-form input:focus {
+  border: 3px solid #2b5e8d;
+}
+
+.login-form input::placeholder {
+  color: #6f8192;
+}
+
+.login-form button,
+.instruction-box button {
+  width: fit-content;
+  margin-top: 16px;
+  padding: 16px 30px;
+  font-size: 1.2rem;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  color: inherit;
+  background-color: #107eeb;
+  background-image: url("enter.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-form button:hover,
+.instruction-box button:hover {
+  transform: scale(1.04);
+}
+
+/* QUIZ */
+
+/* InstructionBox */
+
+.instruction-box {
+  max-width: 500px;
+  width: 100%;
+}
+
+.instruction-box ul {
+  margin-left: 16px;
+}
+
+.instruction-box h2 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 3rem;
+  border-bottom: 5px dashed rgb(203, 207, 212);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.instruction-box li {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.instruction-box div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.instruction-box button:first-child {
+  margin-right: 20px;
+  background-image: url("quit.png");
+}
+
+/* QuizBox */
+
+.quiz-box {
+  max-width: 500px;
+  width: 100%;
+}
+
+.quiz-box h2 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 1.8rem;
+  margin-top: 35px;
+  font-weight: 400;
+  color: #a0a9d4;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.quiz-box h2 span {
+  font-size: 1.2rem;
+  color: #8b93b8;
+}
+
+.quiz-box h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.quiz-box .answers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.quiz-box button {
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 3px solid #214566;
+  border-radius: 16px;
+  color: inherit;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+}
+
+.quiz-box button span {
+  padding-top: 4px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.quiz-box button svg {
+  font-size: 1.8rem;
+  color: #33597d;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.quiz-box button:hover {
+  border: 3px solid #4174a4;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.quiz-box button:hover svg {
+  color: #4d83b7;
+}
+
+.progress-bar {
+  width: 400px;
+  height: 40px;
+  margin: 20px auto 0px;
+  border: 3px solid rgb(93, 100, 134);
+  border-radius: 25px;
+  position: relative;
+  color: rgb(216, 212, 212);
+  font-size: 1.1rem;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    270deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(255, 76, 229, 1) 50%,
+    rgba(255, 76, 76, 1) 100%
+  );
+  box-shadow: inset -400px 0px 0px 0px rgb(37, 44, 74);
+  transition: all 1s linear;
+}
+
+.progress-bar i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+  font-size: 1.2rem;
+}
+
+/* ResumeBox */
+
+.resume-box h2 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.resume-box p {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.resume-box .btn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.resume-box button {
+  margin-top: 40px;
+  width: fit-content;
+  padding: 16px 30px;
+  font-size: 1.2rem;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  color: inherit;
+  background-color: #107eeb;
+  background-image: url("quit.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.resume-box button:last-child {
+  background-image: url("play.png");
+}
+
+.resume-box button:hover {
+  transform: scale(1.04);
+}
