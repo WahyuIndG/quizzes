@@ -1,5 +1,5 @@
 # Website Quizzes
-Sebuah challange pembuatan Aplikasi menggunakan ReactJs, yakni Aplikasi Permainan Quiz sederhana sebagai salah satu syarat mengikuti internship di Perusahaan DOT Indonesi- 
+Sebuah challange pembuatan Aplikasi menggunakan ReactJs, yakni Aplikasi Permainan Quiz sederhana sebagai salah satu syarat mengikuti internship di Perusahaan DOT Indonesia. 
 Aplikasi menerapkan kriteria - kriteria yang diminta, antara lain :
 
 - Memiliki fitur login- soal diambil dari https://opentdb.com/
