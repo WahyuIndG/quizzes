@@ -15,3 +15,4 @@ Aplikasi menerapkan kriteria - kriteria yang diminta, antara lain :
 npm install
 npm run dev
 ```
+*aplikasi hanya untuk tujuan edukasi, proses melatih pemahhaman pengembang dan pemenuhan tugas.
